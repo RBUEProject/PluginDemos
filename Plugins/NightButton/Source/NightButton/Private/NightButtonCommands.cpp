@@ -6,6 +6,7 @@
 
 void FNightButtonCommands::RegisterCommands()
 {
+//Ö´ÐÐµÄÃüÁî
 	UI_COMMAND(PluginAction, "NightButton", "Execute NightButton action", EUserInterfaceActionType::Button, FInputChord());
 }
 

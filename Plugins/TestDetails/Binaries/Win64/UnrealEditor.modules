@@ -1,0 +1,8 @@
+{
+	"BuildId": "19505902",
+	"Modules": 
+	{
+		"ReflectionDataPanel": "UnrealEditor-ReflectionDataPanel.dll",
+		"TestDetails": "UnrealEditor-TestDetails.dll"
+	}
+}

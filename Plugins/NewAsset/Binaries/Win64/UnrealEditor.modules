@@ -1,0 +1,8 @@
+{
+	"BuildId": "19505902",
+	"Modules": 
+	{
+		"NewAsset": "UnrealEditor-NewAsset.dll",
+		"NewAssetEditor": "UnrealEditor-NewAssetEditor.dll"
+	}
+}

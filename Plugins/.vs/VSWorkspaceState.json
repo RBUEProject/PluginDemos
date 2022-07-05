@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MyMode\\Source\\MyMode",
+    "\\NightButton\\Source\\NightButton\\Public",
+    "\\TestDetails",
+    "\\TestDetails\\Source",
+    "\\TestDetails\\Source\\ReflectionDataPanel",
+    "\\TestDetails\\Source\\ReflectionDataPanel\\Private",
+    "\\TestDetails\\Source\\ReflectionDataPanel\\Public",
+    "\\TestDetails\\Source\\TestDetails",
+    "\\TestDetails\\Source\\TestDetails\\Private"
+  ],
+  "SelectedNode": "\\TestDetails\\Source\\ReflectionDataPanel\\Private\\ReflectionDataPanel.cpp",
+  "PreviewInSolutionExplorer": false
+}

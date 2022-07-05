@@ -17,12 +17,12 @@ static const FName NightButtonTabName("NightButton");
 void FNightButtonModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
-	
+	//StartupModule开始时做初始化，注册
 	FNightButtonStyle::Initialize();
 	FNightButtonStyle::ReloadTextures();
-
 	FNightButtonCommands::Register();
-	
+
+	//给命令绑定PluginButtonClicked函数
 	PluginCommands = MakeShareable(new FUICommandList);
 
 	PluginCommands->MapAction(
@@ -50,6 +50,7 @@ void FNightButtonModule::ShutdownModule()
 void FNightButtonModule::PluginButtonClicked()
 {
 	// Put your "OnButtonClicked" stuff here
+	//切换白天夜晚逻辑
 	FText DialogText = FText::FromString("Changing scene to day/night");
 	FMessageDialog::Open(EAppMsgType::Ok, DialogText);
 	AActor* FoundActor;
@@ -96,6 +97,7 @@ void FNightButtonModule::PluginButtonClicked()
 void FNightButtonModule::RegisterMenus()
 {
 	// Owner will be used for cleanup in call to UToolMenus::UnregisterOwner
+	//注册时在编辑器生成 控件 并和PluginCommands 绑定
 	FToolMenuOwnerScoped OwnerScoped(this);
 
 	{
